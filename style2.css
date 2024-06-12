@@ -1,0 +1,663 @@
+element.styles {
+    display: inline-block;
+    width: 1293px;
+ }
+ 
+ .calendar-container2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 1293px;
+    padding-top: 103px;
+    padding-bottom: 57px;
+    background: #dbb5b5;
+    border-radius: 50px;
+ }
+ 
+ .calendar-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-start;
+    min-width: 1050px;
+    height: 88px;
+    padding-right: 41px;
+    padding-left: 41px;
+    margin-left: -66px;
+    background: white;
+ }
+ 
+ .sunday-heading {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 13.64%;
+    padding: 0;
+    margin: 0;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .weekday-label {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 11.36%;
+    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .vertical-flex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 14.94%;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+ 
+ .day-of-week-display-style {
+    padding: 0;
+    margin: 0;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .day-of-week-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 18.39%;
+    padding-left: 16.5px;
+ }
+ 
+ .day-of-week-label {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 18.22%;
+    padding: 0;
+    padding-right: 24px;
+    padding-left: 28.5px;
+    margin: 0;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .day-of-week-highlight {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 14.26%;
+    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .day-of-week-styler {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 9.19%;
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    margin-right: -5.75px;
+    font: 400 18px Montserrat, sans-serif;
+    color: #666666;
+    letter-spacing: -0.36px;
+ }
+ 
+ .divider-line {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    align-self: center;
+    width: 1142px;
+    height: 1px;
+    margin-left: -63px;
+    background: #d9d9d9;
+ }
+ 
+ .calendar-container1 {
+    flex: 0 0 auto;
+    padding-right: 48px;
+    padding-left: 989px;
+ }
+ 
+ .green-box-with-content {
+    box-sizing: border-box;
+    max-width: 150px;
+    padding: 9px 7px 41px;
+    background: rgba(103, 213, 177, 0.2);
+    border: 0.8px solid #e6e6e6;
+ }
+ 
+ .flex-row-with-icons {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 4px;
+    padding-left: 8px;
+ }
+ 
+ .text-highlighted {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 500 24px Montserrat, sans-serif;
+    color: rgba(102, 102, 102, 0.5);
+    letter-spacing: -0.48px;
+ }
+ 
+ .svg-container {
+    display: flex;
+    flex: 0 0 auto;
+    width: 14px;
+    height: 14px;
+    color: #666666;
+ }
+ 
+ .flex-row-with-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 18px;
+    padding-right: 9px;
+    padding-left: 9px;
+    margin-top: 9px;
+ }
+ 
+ .centered-text-box {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 7.25px;
+    padding-left: 7px;
+    background: #fceedf;
+    border-radius: 12px;
+ }
+ 
+ .neutral-emoji-text {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 400 10px "Open Sans", sans-serif;
+    color: black;
+    letter-spacing: -0.2px;
+ }
+ 
+ .subtle-text {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.25px;
+    font: 400 8px Montserrat, sans-serif;
+    color: #836942;
+    letter-spacing: -0.16px;
+ }
+ 
+ .centered-text-box1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 7.25px;
+    padding-left: 7px;
+    margin-left: 4px;
+    background: #eeecfd;
+    border-radius: 12px;
+ }
+ 
+ .serene-vibes {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 1.25px;
+    font: 400 8px Montserrat, sans-serif;
+    color: #5b4fa7;
+    letter-spacing: -0.16px;
+ }
+ 
+ .heritage-info-list {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    font: 400 10px Montserrat, sans-serif;
+    color: #666666;
+    text-align: left;
+    letter-spacing: -0.2px;
+ }
+ 
+ .heritage-list-item {
+    padding-left: 1.5em;
+    margin: 0;
+    list-style: disc;
+ }
+ 
+ .calendar-container3 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: flex-start;
+    min-width: 1050px;
+    margin-left: -65px;
+ }
+ 
+ .flex-column-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 150px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: rgba(103, 213, 177, 0.2);
+    border: 0.8px solid #e6e6e6;
+ }
+ 
+ .content-box-container {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding: 9px 7px 65px;
+    background: rgba(103, 213, 177, 0.2);
+    border: 0.8px solid #e6e6e6;
+ }
+ 
+ .info-panel {
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    font: 400 10px Montserrat, sans-serif;
+    color: #666666;
+    text-align: left;
+    letter-spacing: -0.2px;
+ }
+ 
+ .content-block {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 9px;
+    padding-left: 9px;
+    margin-top: 9px;
+ }
+ 
+ .centered-text-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18px;
+    background: #eeecfd;
+    border-radius: 12px;
+ }
+ 
+ .hierarchical-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: flex-start;
+    justify-content: flex-start;
+ }
+ 
+ .central-panel {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 9px;
+    align-items: stretch;
+    justify-content: center;
+    padding: 9px 7px 49px;
+    background: #fafafa;
+    border: 0.8px solid #e6e6e6;
+ }
+ 
+ .flex-row-with-padding {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 8px;
+    padding-left: 8px;
+ }
+ 
+ .flex-box-with-text {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding-right: 11px;
+ }
+ 
+ .numeric-heading1 {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 500 24px Montserrat, sans-serif;
+    color: #080808;
+    letter-spacing: -0.48px;
+ }
+ 
+ .highlighted-text {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 40.37%;
+    padding: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+    font: 500 24px Montserrat, sans-serif;
+    color: #080808;
+    letter-spacing: -0.48px;
+ }
+ 
+ .vertical-flex-container1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 9.63%;
+    padding-left: 15px;
+ }
+ 
+ .svg-container1 {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-right: -5px;
+    color: #666666;
+ }
+ 
+ .horizontal-text-group {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 18px;
+    padding-right: 9px;
+    padding-left: 9px;
+ }
+ 
+ .hierarchical-text-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 50.37%;
+ }
+ 
+ .flex-row-container1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 49.63%;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+ 
+ .flex-column-with-lists {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 18px;
+ }
+ 
+ .vertical-list-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+ }
+ 
+ .text-block-container {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    font: 400 10px Montserrat, sans-serif;
+    color: #666666;
+    text-align: left;
+    letter-spacing: -0.2px;
+ }
+ 
+ .typography-section {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+    font: 400 10px Montserrat, sans-serif;
+    color: #666666;
+    text-align: left;
+    letter-spacing: -0.2px;
+ }
+ 
+ .horizontal-flex-container-with-spacing {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 83px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 8px;
+    padding-left: 8px;
+ }
+ 
+ .flex-row-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ 
+ .numeric-heading {
+    flex: 0 0 auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 26px;
+    font: 500 24px Montserrat, sans-serif;
+    color: #080808;
+    letter-spacing: -0.48px;
+ }
+ 
+ .vertical-centered-layout {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 19.5px;
+ }
+ 
+ .container-section {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 450px;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: flex-start;
+    justify-content: flex-start;
+ }
+ 
+ .dashboard-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 9px 7px 49px;
+    background: #fafafa;
+    border: 0.8px solid #e6e6e6;
+ }
+ 
+ .hierarchical-content-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 282px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ 
+ .vertical-card-container1 {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 9px;
+    align-items: stretch;
+    justify-content: center;
+ }
+ 
+ .flex-row-with-gap {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+ }
+ 
+ .flex-row-with-icons1 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: 18px;
+    padding-right: 9px;
+    padding-left: 9px;
+ }
+ 
+ .flex-column-with-gap {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 9px;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 18px;
+ }
+ 
+ .vertical-card-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 124px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 26px;
+ }
+ 
+ .flex-row-with-icon {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .life-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    margin-top: 9px;
+    background: #eeecfd;
+    border-radius: 12px;
+ }
+ 
+ .content-wrapper {
+    flex: 0 0 auto;
+    padding-right: 65px;
+ }
+ 
+ .translucent-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-right: 44px;
+    background: rgba(255, 255, 255, 0.67);
+ }
+ 
+ .vertical-button-container {
+    box-sizing: border-box;
+    width: 200px;
+    padding-top: 31px;
+    padding-bottom: 10px;
+ }
+ 
+ .academic-calendar-heading {
+    flex: 0 0 auto;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 21px;
+    margin-left: -120px;
+    font: 800 64px Rounded Mplus 1c;
+    color: black;
+    text-transform: uppercase;
+ }

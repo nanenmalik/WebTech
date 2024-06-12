@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #B0CBCF;
+    color: #FFF;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 30px;
+    margin-right: -50px;
+    margin-left: 250px;
+    position: static;
+}
+
+.my-element {
+    padding-left: 20px;
+    float: left;
+    margin-left: 171.5px;
+    /* Add 30px margin on all sides (overrides right margin for top, bottom, and left) */
+    margin-top: 32px;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+h1 {
+    margin-left: 20px;
+    color: #B0CBCF;
+}
+
+h4 {
+    margin-left: 20px;
+    color: #000000;
+    
+    margin-top: -120px;
+    margin-left: 180px;
+    float: left;
+}
+
+.text-on-top {
+    position: absolute; /* Positions the text on top of the circle */
+    top: 480px; /* Centers the text vertically */
+    left: 450px; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts positioning for better centering */
+    color: rgb(0, 0, 0); /* Set your desired text color */
+    text-align: center; /* Centers text within the circle */
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .text-on-top-note {
+    position: absolute; /* Positions the text on top of the circle */
+    top: 550px; /* Centers the text vertically */
+    left: 500px; /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Adjusts positioning for better centering */
+    color: rgb(0, 0, 0); /* Set your desired text color */
+    text-align: center; /* Centers text within the circle */
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.circle-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: space-around;
+    /* Distribute circles evenly */
+    margin: 100px;
+    /* Center the container horizontally */
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    width: 200px;
+    height: 200px;
+    background-color: different;
+    /* Use different background colors for each circle */
+    border-radius: 50%;
+    opacity: 70%;
+}
+
+
+
+.circle1 {
+    /* Style the first inner circle */
+
+    background-color: #CDE8E5;
+    opacity: 5;
+    /* Red color */
+}
+
+.circle2 {
+    /* Style the second inner circle */
+    top: 0;
+    margin-right: -50px;
+    margin: -100px;
+    /* Add some space between circles */
+    opacity: 5;
+    background-color: #4D869C;
+    /* Blue color */
+}
+
+.circle3 {
+    /* Style the third inner circle */
+    bottom: 0;
+    left: 0;
+    background-color: #7AB2B2;
+    /* Green color */
+}
+
+.container img {
+    position: absolute; /* Positions the image on top of the container */
+    top: 270px; /* Positions the image at the top */
+    right: 0; /* Positions the image at the left */
+    width: 60%; /* Stretches the image to fill the container */
+    height: 70%; /* Stretches the image to fill the container */
+    object-fit: scale-down; /* Ensures the entire image is displayed within the container */
+    margin-right: -5%;
+  }
+
+  .container img2 {
+    width: 50%; /* Adjust the width as needed */
+  height: auto; /* Automatically adjusts height based on image ratio */
+  margin: 0 auto; /* Centers the image horizontally within the section */
+  border-radius: 10px; /* Adds rounded corners to the image */
+  }
+
+  .img1-button {
+    border-radius: 20px;
+    position: absolute; /* Positions the button on top of the image */
+    top: 105%; /* Centers the button vertically */
+    left: 95%; /* Centers the button horizontally */
+    transform: translate(-50%, -50%); /* Fine-tunes button positioning */
+    background-color: #246a73; /* Removes default button background */
+    border-color: #000000;
+    opacity: 90%;
+    color: rgb(255, 255, 255); /* Sets button text color */
+    padding: 5px 40px; /* Adjusts button padding for desired size */
+    font-size: 18px; /* Adjusts button text size */
+    cursor: pointer; /* Indicates the element as a clickable button */
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.congratulations,
+.calendar,
+.helpful-links {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.congratulations h2,
+.calendar h2,
+.helpful-links h2 {
+    margin-bottom: 10px;
+}
+
+.calendar a {
+    color: #002E63;
+    text-decoration: none;
+}
+
+.calendar p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #002E63;
+    margin-bottom: 5px;
+}
+
+.helpful-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.helpful-links li {
+    margin-bottom: 10px;
+}
