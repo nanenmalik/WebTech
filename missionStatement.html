@@ -4,206 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission Statement</title>
+    <!-- Internal CSS for styling various elements -->
     <style>
+        /* Styling for generic elements */
         element-styles {
-   display: inline-block;
-   width: 1440px;
-}
+            display: inline-block;
+            width: 1440px;
+        }
 
-.yale-school-of-art-website-style {
-   box-sizing: border-box;
-   min-width: 1440px;
-   background: white;
-}
+        /* Main container for the Yale School of Art website */
+        .yale-school-of-art-website-style {
+            box-sizing: border-box;
+            min-width: 1440px;
+            background: white;
+        }
 
-.art-school-info-panel {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   gap: 70px;
-   align-items: stretch;
-   justify-content: flex-start;
-   width: 100%;
-   padding-top: 49px;
-   padding-bottom: 33px;
-   padding-left: 47px;
-   background: #e6e6e6;
-}
+        /* Info panel for the art school */
+        .art-school-info-panel {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            align-items: stretch;
+            justify-content: flex-start;
+            width: 100%;
+            padding-top: 49px;
+            padding-bottom: 33px;
+            padding-left: 47px;
+            background: #e6e6e6;
+        }
 
-.art-card {
-   box-sizing: border-box;
-   display: flex;
-   flex: 0 0 auto;
-   flex-direction: row;
-   align-items: flex-end;
-   justify-content: space-between;
-   width: 1390px;
-   height: 121px;
-   padding-right: 500px;
-   padding-bottom: 40px;
-   padding-left: 200px;
-   background: #b0cbcf;
-   border-radius: 50px;
-}
+        /* Card at the top with the home link */
+        .art-card {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 1390px;
+            height: 121px;
+            padding-right: 500px;
+            padding-bottom: 40px;
+            padding-left: 200px;
+            background: #b0cbcf;
+            border-radius: 50px;
+        }
 
-.home-title-style {
-   flex: 0 0 auto;
-   padding-left: 1000px;
-   margin: 0;
-   font: 400 32px Ruda, sans-serif;
-   color: black;
-   text-transform: uppercase;
-}
+        /* Home link styling */
+        .home-title-style {
+            flex: 0 0 auto;
+            padding-left: 1000px;
+            margin: 0;
+            font: 400 32px Ruda, sans-serif;
+            color: black;
+            text-transform: uppercase;
+        }
 
+        /* Mission statement heading styling */
+        .mission-statement-heading {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            align-self: center;
+            width: 602px;
+            padding: 0;
+            margin: 0;
+            margin-left: -47px;
+            font: 800 48px Ruda, sans-serif;
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+        }
 
-.mission-statement-heading {
-   box-sizing: border-box;
-   flex: 0 0 auto;
-   align-self: center;
-   width: 602px;
-   padding: 0;
-   margin: 0;
-   margin-left: -47px;
-   font: 800 48px Ruda, sans-serif;
-   color: black;
-   text-align: center;
-   text-transform: uppercase;
-}
+        /* Container for the mission statement content */
+        .mission-statement-container {
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 15.5px;
+        }
 
-.mission-statement-container {
-   display: flex;
-   flex: 0 0 auto;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: flex-start;
-   margin-top: 15.5px;
-}
+        /* Info block for the art school */
+        .art-school-info-block {
+            flex: 0 0 auto;
+            padding-bottom: 2.25px;
+        }
 
-.art-school-info-block {
-   flex: 0 0 auto;
-   padding-bottom: 2.25px;
-}
+        /* Container for the first part of the mission statement */
+        .art-school-info-container {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            padding: 57px 15px 17px 22px;
+            background: rgba(8, 8, 8, 0.5);
+            border-radius: 27px;
+        }
 
-.art-school-info-container {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   max-width: 600px;
-   padding: 57px 15px 17px 22px;
-   background: rgba(8, 8, 8, 0.5);
-   border-radius: 27px;
-}
+        /* Text style for the first part of the mission statement */
+        .art-school-mission-text-style {
+            flex: 0 0 auto;
+            align-self: stretch;
+            padding: 0;
+            margin: 0;
+            font: 400 20px/28px Roboto, sans-serif;
+            color: #211616;
+            text-align: left;
+        }
 
-.art-school-mission-text-style {
-   flex: 0 0 auto;
-   align-self: stretch;
-   padding: 0;
-   margin: 0;
-   font: 400 20px/28px  Roboto, sans-serif;
-   color: #211616;
-   text-align: left;
-}
+        /* Empty info box for future use or styling */
+        .info-box {
+            flex: 0 0 auto;
+            padding-left: 5px;
+            margin-top: 98px;
+        }
 
+        /* Container for the second part of the mission statement */
+        .art-school-info-container1 {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 1 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 600px;
+            padding: 57px 15px 17px 22px;
+            margin-left: 36px;
+            background: rgba(8, 8, 8, 0.5);
+            border-radius: 27px;
+        }
 
+        /* Text style for the second part of the mission statement */
+        .art-school-message {
+            flex: 0 0 auto;
+            align-self: stretch;
+            padding: 0;
+            margin: 0;
+            font: 400 20px/28px Roboto, sans-serif;
+            color: #211616;
+            text-align: left;
+        }
 
-.info-box {
-   flex: 0 0 auto;
-   padding-left: 5px;
-   margin-top: 98px;
-}
+        /* Empty info box for future use or styling */
+        .art-school-info {
+            flex: 0 0 auto;
+            padding-left: 15px;
+            margin-top: 48px;
+        }
 
+        /* Main content container styling */
+        .main-content-container {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 116px;
+        }
 
+        /* Container for additional content, not currently used */
+        .content-container1 {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 190px 63px 24px;
+            background: #d9d9d9;
+        }
 
+        /* Flex container for additional text content, not currently used */
+        .flex-container-with-text-content {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
 
-.art-school-info-container1 {
-   box-sizing: border-box;
-   display: flex;
-   flex: 0 1 auto;
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;
-   max-width: 600px;
-   padding: 57px 15px 17px 22px;
-   margin-left: 36px;
-   background: rgba(8, 8, 8, 0.5);
-   border-radius: 27px;
-}
-
-.art-school-message {
-   flex: 0 0 auto;
-   align-self: stretch;
-   padding: 0;
-   margin: 0;
-   font: 400 20px/28px Roboto, sans-serif;
-   color: #211616;
-   text-align: left;
-}
-
-.art-school-info {
-   flex: 0 0 auto;
-   padding-left: 15px;
-   margin-top: 48px;
-}
-
-.main-content-container {
-   box-sizing: border-box;
-   width: 100%;
-   margin-top: 116px;
-}
-
-.content-container1 {
-   box-sizing: border-box;
-   width: 100%;
-   padding: 190px 63px 24px;
-   background: #d9d9d9;
-
-}
-
-.flex-container-with-text-content {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: flex-start;
-   width: 100%;
-}
-
-.main-content-section {
-   flex: 1 0 auto;
-   padding-top: 21.5px;
-}
-
-
-
-
+        /* Section for main content, not currently used */
+        .main-content-section {
+            flex: 1 0 auto;
+            padding-top: 21.5px;
+        }
     </style>
 </head>
 <body>
-    <div style="display: inline-block; width: 1440px; "data-ignore ="used only for top most containter width" >
-  <div class="yale-school-of-art-website-style">
-    <div class="art-school-info-panel">
-      <div class="art-card">
-        <p class="home-title-style"><a href=homepage.html>HOME</a></p>
-      </div>
-      <p class="mission-statement-heading">MISSION STATEMENTS</p>
-      <div class="mission-statement-container">
-        <div class="art-school-info-block">
-          <div class="art-school-info-container">
-            <p class="art-school-mission-text-style">The mission of the Yale School of Art is to provide students with intellectually informed, hands-on instruction in the practice of an array of visual arts media within the context of a liberal arts university. As a part of the first institution of higher learning to successfully integrate a studio-based education into such a broad pedagogical framework, the Yale School of Art has a long and distinguished history of training artists of the highest caliber. A full-time faculty of working artists in conjunction with a diverse cross-section of accomplished visiting artists collaborate to design a program and foster an environment where the unique talents and perspectives of individual students can emerge and flourish.</p>
-            <div class="info-box">
+    <!-- Main container for the page -->
+    <div style="display: inline-block; width: 1440px;" data-ignore="used only for top most container width">
+        <!-- Main container for the Yale School of Art website -->
+        <div class="yale-school-of-art-website-style">
+            <!-- Info panel for the art school -->
+            <div class="art-school-info-panel">
+                <!-- Card at the top with the home link -->
+                <div class="art-card">
+                    <!-- Home link -->
+                    <p class="home-title-style"><a href="homepage.html">HOME</a></p>
+                </div>
+                <!-- Mission statement heading -->
+                <p class="mission-statement-heading">MISSION STATEMENTS</p>
+                <!-- Container for the mission statement content -->
+                <div class="mission-statement-container">
+                    <!-- Info block for the art school -->
+                    <div class="art-school-info-block">
+                        <!-- Container for the first part of the mission statement -->
+                        <div class="art-school-info-container">
+                            <!-- First part of the mission statement text -->
+                            <p class="art-school-mission-text-style">The mission of the Yale School of Art is to provide students with intellectually informed, hands-on instruction in the practice of an array of visual arts media within the context of a liberal arts university. As a part of the first institution of higher learning to successfully integrate a studio-based education into such a broad pedagogical framework, the Yale School of Art has a long and distinguished history of training artists of the highest caliber. A full-time faculty of working artists in conjunction with a diverse cross-section of accomplished visiting artists collaborate to design a program and foster an environment where the unique talents and perspectives of individual students can emerge and flourish.</p>
+                            <div class="info-box"></div>
+                        </div>
+                    </div>
+                    <!-- Container for the second part of the mission statement -->
+                    <div class="art-school-info-container1">
+                        <!-- Second part of the mission statement text -->
+                        <p class="art-school-message">The School of Art is founded on the belief that art is a fundamental force in national and international culture, and that one of the primary standards by which societies are judged is the quality, creative freedom, critical insight, and formal and technical innovation of the visual art they produce. The Yale School of Art teaches at the graduate and undergraduate levels, and consequently the student body consists of those whose primary or exclusive focus is art as well as those for whom art is an essential part of a varied course of inquiry. The school currently offers degrees and undergraduate majors in the areas of graphic design, painting/printmaking, photography, and sculpture.</p>
+                        <div class="art-school-info"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="art-school-info-container1">
-          <p class="art-school-message">The School of Art is founded on the belief that art is a fundamental force in national and international culture, and that one of the primary standards by which societies are judged is the quality, creative freedom, critical insight, and formal and technical innovation of the visual art they produce. The Yale School of Art teaches at the graduate and undergraduate levels, and consequently the student body consists of those whose primary or exclusive focus is art as well as those for whom art is an essential part of a varied course of inquiry. The school currently offers degrees and undergraduate majors in the areas of graphic design, painting/printmaking, photography, and sculpture.</p>
-          <div class="art-school-info">
-          </div>
-        </div>
-      </div>
     </div>
-    
-
 </body>
 </html>
