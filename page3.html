@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3</title>
+    <style>
+        element-styles {
+            display: inline-block;
+            width: 1440px;
+            background: white;
+        }
+
+        .school-support-section {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            min-width: 770px;
+            padding-bottom: 73px;
+        }
+
+        .school-support-container {
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .school-support-section2 {
+            box-sizing: border-box;
+            flex: 0 0 280px;
+            padding: 214px 33px 600px;
+            background: #e6e6e6;
+        }
+
+        .school-support-heading {
+            box-sizing: border-box;
+            max-width: 200px;
+            padding: 0;
+            margin: 0;
+            font: 800 30px Ruda ExtraBold, sans-serif;
+            color: black;
+            text-align: justify;
+            text-transform: uppercase;
+        }
+
+        .school-support-section1 {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 0 636px;
+            flex-direction: column;
+            align-items: stretch;
+            align-self: center;
+            justify-content: center;
+            margin-left: -146px;
+        }
+
+        .home-section {
+            box-sizing: border-box;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            width:1000px;
+            height: 121px;
+            padding-right: 28px;
+            padding-left: 28px;
+            background: #b0cbcf;
+            border-radius: 50px;
+        }
+
+        .home-title {
+            flex: 0 0 auto;
+            padding: 0;
+            margin: 0;
+            margin-right: 39px;
+            font: 400 32px Ruda, sans-serif;
+            color: black;
+            text-transform: uppercase;
+            background: #b0cbcf;
+        }
+
+        .vertical-options-container {
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 44px;
+            align-items: stretch;
+            justify-content: center;
+            padding-right: 26px;
+            padding-left: 26px;
+            margin-top: 57px;
+        }
+
+        .dropdown-container1 {
+            flex: 0 0 auto;
+        }
+
+        .accordion {
+            cursor: pointer;
+            padding: 30px;
+            margin: 50px;
+            font: 400 20px Ruda, sans-serif;
+            color: black;
+            text-transform: uppercase;
+            background: pink;
+            border: none;
+            outline: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .accordion:hover {
+            background-color: #ffc0cbc0;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            margin-left: 50px;
+            background: #868484ac;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            text-align: center ;
+            font: 20px Ruda, sans-serif;
+        }
+
+        .accordion-content p {
+            padding: 10px;
+        }
+
+        .school-support-message {
+            flex: 0 0 auto;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+            margin-top: 83px;
+            margin-left: 50px;
+            font: 800 40px Ruda, sans-serif;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        .give-here a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            background: #b0cbcf;
+            
+        }
+
+        .give-here a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: inline-block; width: 1440px; background: white" data-ignore="used only for top most containter width">
+        <div class="school-support-section">
+          <div class="school-support-container">
+            <div class="school-support-section2">
+              <p class="school-support-heading">SUPPORT THE SCHOOL</p>
+            </div>
+            <div class="school-support-section1">
+              <div class="home-section">
+                <p class="home-title">home</p>
+              </div>
+              <div class="vertical-options-container">
+                <div class="dropdown-container1">
+                    <button class="accordion">Annual Fund</button>
+                    <div class="accordion-content">
+                        <p>Gifts from alumni, parents, friends, and anyone interested in art make an immediate impact on the School. Scholarship funds are the top priority and the money received from Annual Fund donations directly supports our students. Gifts of all sizes make an impact.</p>
+                        <p class="give-here"><a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=70.584.71.557.402.&_ga=2.209527569.2060302275.1633371950-314280281.1633008068">GIVE HERE</a></p>
+                    </div> 
+                    <button class="accordion">Endowment Fund</button>
+                    <div class="accordion-content">
+                        <p>Gift commitments of $50,000 or more (over of period of up to five years) can be directed to the Yale Endowment to provide ongoing support for the School of Art. These gifts are invested growing steadily overtime and providing more and more distributed income to the School each year. Endowment gifts are an investment in the future of the School. Endowment gifts can support scholarships, faculty, research and travel, and capital needs.</p>
+                        <p class="endowment">To discuss making an endowment, contact Nicole Freeman, Director of Development & Alumni Relations, 203.432.5846 | <a href="mailto:nicole.freeman@yale.edu">nicole.freeman@yale.edu</a></p>
+                    </div>
+                    <button class="accordion">Planned Giving</button>
+                    <div class="accordion-content">
+                        <p>You can support the School through bequest, annunities, trusts, and other financial vehicles.
+
+                            Surprises are nice, but if possible, please contact the Director of Development at the Yale School of Art to discuss your planned gift. This will help ensure that your intention is carried out as you envision.
+                            
+                            It is important to state specifically in your will what you would like to support at the school: scholarships, faculty, programs, etc. Suggested language: “I give (dollars or asset) to Yale University, New Haven, Connecticut, for the Yale School of Art to support (scholarships or faculty support or program or etc.)</p>
+                        <p class="planned-giving">For more information, visit <a href="https://forhumanity.yale.edu/planned-giving">Yale Planned Giving</a></p>
+                    </div>
+                    <button class="accordion">Make a Gift</button>
+                    <div class="accordion-content">
+                        <p class="make-a-gift"><a href="https://secure.yale.imodules.com/s/1667/52/cart/form.aspx?sid=1667&gid=52&pgid=5594&cid=14277&bledit=1&dids=70.584.71.557.402.&_ga=2.209527569.2060302275.1633371950-314280281.1633008068">Make a Gift</a></p>
+                            <p>Or contact
+                            Nicole Freeman, Director of Development & Alumni Relations, Yale School of Art
+                            Yale University Office of Development
+                            PO Box 2038
+                            New Haven CT 06521-2038
+                            203.432.5846
+                            <a href= mailto:nicole.freeman@yale.edu>nicole.freeman@yale.edu</a></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="school-support-message">THANKS FOR THE SUPPORT!</p>
+        </div>
+      </div>
+      
+      <div id="footer"></div>
+      <script>
+
+          document.addEventListener("DOMContentLoaded", function() {
+              var accordions = document.querySelectorAll(".accordion");
+              accordions.forEach(function(accordion) {
+                  accordion.addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var content = this.nextElementSibling;
+                      if (content.style.maxHeight) {
+                          content.style.maxHeight = null;
+                      } else {
+                          content.style.maxHeight = content.scrollHeight + "px";
+                      }
+                  });
+              });
+          });
+
+          fetch('footer.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('footer').innerHTML = data;
+              });
+
+      </script>
+</body>
+</html>
