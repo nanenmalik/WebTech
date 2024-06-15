@@ -3,311 +3,327 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Page</title>
 </head>
+
 <body>
-   
-  <div id="fetched-content"></div>
-  <script>
-    const contentContainer = document.getElementById('fetched-content');
 
-    fetch('academiccal.html')
-      .then(response => response.text())
-      .then(data => {
-        contentContainer.innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Error fetching academiccal.html:', error);
-      });
+   <div id="fetched-content"></div><!--this sript is to fetch calendar from academiccal.html-->
+   <script>
+      const contentContainer = document.getElementById('fetched-content');
 
-  </script>
+      fetch('academiccal.html')
+         .then(response => response.text())
+         .then(data => {
+            contentContainer.innerHTML = data;
+         })
+         .catch(error => {
+            console.error('Error fetching academiccal.html:', error);
+         });
 
-  <div class="trendingnews">
-    
-<div style="display: inline-block; width: 1439px; background: white" data-ignore="used only for top most containter width">
-    <div class="news-container">
-    <div class="trending-news-container">
-    <p class="trending-news-heading">Trending news</p>
-    <div class="content-container">
-    <div class="info-panel">
-    <div class="message-container">
-    <div class="full-width-container">
-    <!-- Input Component is detected here -->
-    <input placeholder="Shops, Labs, & Facilities" type="text" class="input-with-rounded-background input-style-f62::placeholder" />
-    </div>
-    <div class="fabrication-shop-announcement">
-    <p class="announcement-text-style">The Edgewood Fabrication Shop will be closing for the Summer on May 30th at 7pm. Please collect your materials and projects and store them in your studio if you plan to use them in the upcoming academic year. Any remaining materials left after May 30th will transition to scrap.<br />Please also remember to return any borrowed tools by 12 Noon on May 31st.<br />Have a great summer!</p>
-    </div>
-    <div class="date-info-container">
-    <div class="teal-box"></div>
-    <p class="date-header-text-style">30 may</p>
-    </div>
-    </div>
-    <div class="studio-deadlines-section">
-    <div class="flex-container-with-text-aligned-left">
-    <div class="deadline-box">
-    <!-- Input Component is detected here -->
-    <input placeholder="Returning Students (2nd year MFAs)" type="text" class="golden-button input-style-f62::placeholder" />
-    </div>
-    <!-- Button Component is detected here -->
-    <button class="deadline-button-style">Deadlines</button>
-    </div>
-    <div class="studio-moveout-info">
-    <p class="studio-details-text">Graduating students will have until Tuesday, June 28, 2024 at noon to move out of their studios. Studios must be clear and clean (as in floors swept, walls empty).  Keys must be returned in-person to John P. Hogan&apos;s desk in 36 Edgewood Ave (Room 111) by 12pm on June 28th. Failure to return your keys will result in key/lock replacement charges.  <br />Your card access will expire on July 1st, 2024 to all Yale and School of Art buildings.<br /><br />Your access to all shops and labs will end May 30th. <br />Shop and Lab access will end before studio access ends. If you need to build crates or use the labs to prepare for your move out, you must complete this in May. </p>
-    </div>
-    <div class="info-box">
-    <div class="teal-box"></div>
-    <p class="date-header-text-style">30 may</p>
-    </div>
-    </div>
-    </div>
-    <!-- Button Component is detected here -->
-    <button class="primary-button-style">See More</button>
-    </div>
-    </div>
-    </div>
-    </div>
-  </div>
+   </script>
 
-  <style>
-    element-styles {
-   display: inline-block;
-   width: 1439px;
-   background: white;
-}
+   <div class="trendingnews">
 
-.news-container {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: flex-start;
-   min-width: 1439px;
-}
-
-.trending-news-container {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   align-items: stretch;
-   justify-content: center;
-   min-width: 1119px;
-   padding-top: 104px;
-   padding-bottom: 166px;
-}
-
-.trending-news-heading {
-   flex: 0 0 auto;
-   align-self: center;
-   padding: 0;
-   margin: 0;
-   margin-left: 60px;
-   font: 800 64px Rounded Mplus 1c;
-   color: black;
-   text-transform: uppercase;
-}
-
-.content-container {
-   display: flex;
-   flex: 0 0 auto;
-   flex-direction: column;
-   align-items: stretch;
-   justify-content: center;
-   margin-top: 116px;
-}
-
-.info-panel {
-   display: flex;
-   flex: 0 0 auto;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: flex-start;
-}
-
-.message-container {
-   box-sizing: border-box;
-   flex: 1 1 0;
-   padding: 33px 41px 14px;
-   background: #d9d9d9;
-}
-
-.full-width-container {
-   box-sizing: border-box;
-   width: 100%;
-}
-
-.input-with-rounded-background {
-   box-sizing: border-box;
-   width: 100%;
-   height: 58px;
-   padding-left: 26px;
-   font: 400 16px Ruda, sans-serif;
-   text-transform: uppercase;
-   background: #87c4ae;
-   border: none;
-   border-radius: 50px;
-}
-
-.input-style-f62::placeholder {
-   color: black;
-}
-
-.fabrication-shop-announcement {
-   padding-right: 13px;
-   padding-left: 13px;
-   margin-top: 35px;
-}
-
-.announcement-text-style {
-   box-sizing: border-box;
-   max-width: 419px;
-   padding: 0;
-   margin: 0;
-   font: 400 16px Ruda, sans-serif;
-   color: black;
-   text-align: left;
-   text-transform: uppercase;
-}
-
-.date-info-container {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: flex-start;
-   margin-top: 72px;
-}
-
-.teal-box {
-   box-sizing: border-box;
-   flex: 0 0 auto;
-   width: 16px;
-   height: 66px;
-   background: #438b95;
-}
-
-.date-header-text-style {
-   flex: 0 0 auto;
-   padding: 0;
-   margin: 0;
-   margin-left: 27px;
-   font: 800 32px Rounded Mplus 1c;
-   color: black;
-   text-transform: uppercase;
-}
-
-.studio-deadlines-section {
-   box-sizing: border-box;
-   flex: 1 1 0;
-   padding: 33px 27px 14px;
-   margin-left: 45px;
-   background: #d9d9d9;
-}
-
-.flex-container-with-text-aligned-left {
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: flex-start;
-   width: 100%;
-}
-
-.deadline-box {
-   flex: 1 0 auto;
-}
-
-.golden-button {
-   box-sizing: border-box;
-   width: 100%;
-   height: 58px;
-   padding-left: 26px;
-   font: 400 16px Ruda, sans-serif;
-   text-transform: uppercase;
-   background: #c6b621;
-   border: none;
-   border-radius: 50px;
-}
-
-.deadline-button-style {
-   box-sizing: border-box;
-   display: block;
-   flex: 0 0 auto;
-   width: 133px;
-   min-width: 133px;
-   height: 58px;
-   margin-left: 10px;
-   font: 400 16px Ruda, sans-serif;
-   color: black;
-   text-transform: uppercase;
-   cursor: pointer;
-   background: #d35c42;
-   border: none;
-   border-radius: 50px;
-}
-
-.studio-moveout-info {
-   padding-right: 14px;
-   padding-left: 14px;
-   margin-top: 20px;
-}
-
-.studio-details-text {
-   box-sizing: border-box;
-   max-width: 478px;
-   padding: 0;
-   margin: 0;
-   font: 400 16px Ruda, sans-serif;
-   color: black;
-   text-align: left;
-   text-transform: uppercase;
-}
-
-.info-box {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: flex-start;
-   padding-right: 8px;
-   padding-left: 8px;
-   margin-top: 12.5px;
-}
-
-.primary-button-style {
-   box-sizing: border-box;
-   display: block;
-   flex: 0 0 auto;
-   align-self: center;
-   width: 200px;
-   min-width: 200px;
-   height: 60px;
-   margin-top: 152px;
-   margin-left: -17px;
-   font: 400 18px Roboto, sans-serif;
-   color: white;
-   cursor: pointer;
-   background: black;
-   border: none;
-   border-radius: 5px;
-}
+      <div style="display: inline-block; width: 1439px; background: white"
+         data-ignore="used only for top most containter width">
+         <div class="news-container">
+            <div class="trending-news-container">
+               <p class="trending-news-heading">Trending news</p>
+               <div class="content-container">
+                  <div class="info-panel">
+                     <div class="message-container">
+                        <div class="full-width-container">
+                           <!-- Converted Input to Div -->
+                           <div class="input-with-rounded-background input-style-f62::placeholder">Shops, Labs, &
+                              Facilities</div>
+                        </div>
+                        <div class="fabrication-shop-announcement">
+                           <p class="announcement-text-style">The Edgewood Fabrication Shop will be closing for the
+                              Summer on May 30th at 7pm. Please collect your materials and projects and store them in
+                              your studio if you plan to use them in the upcoming academic year. Any remaining materials
+                              left after May 30th will transition to scrap.<br />Please also remember to return any
+                              borrowed tools by 12 Noon on May 31st.<br />Have a great summer!</p>
+                        </div>
+                        <div class="date-info-container">
+                           <div class="teal-box"></div>
+                           <p class="date-header-text-style">30 may</p>
+                        </div>
+                     </div>
+                     <div class="studio-deadlines-section">
+                        <div class="flex-container-with-text-aligned-left">
+                           <div class="deadline-box">
+                              <!-- Converted Input to Div -->
+                              <div class="golden-button input-style-f62::placeholder">Returning Students (2nd year MFAs)
+                              </div>
+                           </div>
+                           <!-- Button Component is detected here -->
+                           <button class="deadline-button-style">Deadlines</button>
+                        </div>
+                        <div class="studio-moveout-info">
+                           <p class="studio-details-text">Graduating students will have until Tuesday, June 28, 2024 at
+                              noon to move out of their studios. Studios must be clear and clean (as in floors swept,
+                              walls empty). Keys must be returned in-person to John P. Hogan&apos;s desk in 36 Edgewood
+                              Ave (Room 111) by 12pm on June 28th. Failure to return your keys will result in key/lock
+                              replacement charges. <br />Your card access will expire on July 1st, 2024 to all Yale and
+                              School of Art buildings.<br /><br />Your access to all shops and labs will end May 30th.
+                              <br />Shop and Lab access will end before studio access ends. If you need to build crates
+                              or use the labs to prepare for your move out, you must complete this in May. </p>
+                        </div>
+                        <div class="info-box">
+                           <div class="teal-box"></div>
+                           <p class="date-header-text-style">30 may</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Button here are not functioning as the next page is not included in figma -->
+                  <button class="primary-button-style">See More</button>
+               </div>
+            </div>
+         </div>
+      </div>
 
 
-  </style>
+      <style>
+         element-styles {
+            display: inline-block;
+            width: 1439px;
+            background: white;
+         }
 
-<div id="footer-container"></div>
-<script>
-   const footerContainer = document.getElementById('footer-container');
+         .news-container {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 1439px;
+         }
 
-   fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-         footerContainer.innerHTML = data;
-      })
-      .catch(error => {
-         console.error('Error fetching footer:', error);
-      });
-</script>
+         .trending-news-container {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            min-width: 1119px;
+            padding-top: 104px;
+            padding-bottom: 166px;
+         }
+
+         .trending-news-heading {
+            flex: 0 0 auto;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+            margin-left: 60px;
+            font: 800 64px Rounded Mplus 1c;
+            color: black;
+            text-transform: uppercase;
+         }
+
+         .content-container {
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            margin-top: 116px;
+         }
+
+         .info-panel {
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+         }
+
+         .message-container {
+            box-sizing: border-box;
+            flex: 1 1 0;
+            padding: 33px 41px 14px;
+            background: #d9d9d9;
+         }
+
+         .full-width-container {
+            box-sizing: border-box;
+            width: 100%;
+         }
+
+         .input-with-rounded-background {
+            box-sizing: border-box;
+            width: 100%;
+            height: 58px;
+            padding-left: 26px;
+            font: 400 16px Ruda, sans-serif;
+            text-transform: uppercase;
+            background: #87c4ae;
+            border: none;
+            border-radius: 50px;
+         }
+
+         .input-style-f62::placeholder {
+            color: black;
+         }
+
+         .fabrication-shop-announcement {
+            padding-right: 13px;
+            padding-left: 13px;
+            margin-top: 35px;
+         }
+
+         .announcement-text-style {
+            box-sizing: border-box;
+            max-width: 419px;
+            padding: 0;
+            margin: 0;
+            font: 400 16px Ruda, sans-serif;
+            color: black;
+            text-align: left;
+            text-transform: uppercase;
+         }
+
+         .date-info-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 72px;
+         }
+
+         .teal-box {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            width: 16px;
+            height: 66px;
+            background: #438b95;
+         }
+
+         .date-header-text-style {
+            flex: 0 0 auto;
+            padding: 0;
+            margin: 0;
+            margin-left: 27px;
+            font: 800 32px Rounded Mplus 1c;
+            color: black;
+            text-transform: uppercase;
+         }
+
+         .studio-deadlines-section {
+            box-sizing: border-box;
+            flex: 1 1 0;
+            padding: 33px 27px 14px;
+            margin-left: 45px;
+            background: #d9d9d9;
+         }
+
+         .flex-container-with-text-aligned-left {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+         }
+
+         .deadline-box {
+            flex: 1 0 auto;
+         }
+
+         .golden-button {
+            box-sizing: border-box;
+            width: 100%;
+            height: 58px;
+            padding-left: 26px;
+            font: 400 16px Ruda, sans-serif;
+            text-transform: uppercase;
+            background: #c6b621;
+            border: none;
+            border-radius: 50px;
+            
+         }
+
+         .deadline-button-style {
+            box-sizing: border-box;
+            display: block;
+            flex: 0 0 auto;
+            width: 133px;
+            min-width: 133px;
+            height: 58px;
+            margin-left: 10px;
+            font: 400 16px Ruda, sans-serif;
+            color: black;
+            text-transform: uppercase;
+            cursor: pointer;
+            background: #d35c42;
+            border: none;
+            border-radius: 50px;
+         }
+
+         .studio-moveout-info {
+            padding-right: 14px;
+            padding-left: 14px;
+            margin-top: 20px;
+         }
+
+         .studio-details-text {
+            box-sizing: border-box;
+            max-width: 478px;
+            padding: 0;
+            margin: 0;
+            font: 400 16px Ruda, sans-serif;
+            color: black;
+            text-align: left;
+            text-transform: uppercase;
+         }
+
+         .info-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-right: 8px;
+            padding-left: 8px;
+            margin-top: 12.5px;
+         }
+
+         .primary-button-style {
+            box-sizing: border-box;
+            display: block;
+            flex: 0 0 auto;
+            align-self: center;
+            width: 200px;
+            min-width: 200px;
+            height: 60px;
+            margin-top: 152px;
+            margin-left: -17px;
+            font: 400 18px Roboto, sans-serif;
+            color: white;
+            cursor: pointer;
+            background: black;
+            border: none;
+            border-radius: 5px;
+         }
+      </style>
+
+      <div id="footer-container"></div>
+      <script>
+         const footerContainer = document.getElementById('footer-container');
+
+         fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+               footerContainer.innerHTML = data;
+            })
+            .catch(error => {
+               console.error('Error fetching footer:', error);
+            });
+      </script>
 </body>
+
 </html>
