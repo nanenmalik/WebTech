@@ -8,8 +8,9 @@ header {
     background-color: #B0CBCF;
     color: #FFF;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
+    padding-left: 1000px;
+    justify-content: right;
+    align-items: right;
     border-radius: 50px;
     margin: 30px;
     margin-right: -50px;
